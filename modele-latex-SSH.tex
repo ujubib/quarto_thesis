@@ -1,0 +1,131 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{tikz}
+
+%\usepackage[a4paper,margin=2cm]{geometry}
+%\usepackage{tikz}
+\usepackage{lipsum} 
+\geometry{left=3cm,right=3cm,top=2.5cm,bottom=2.5cm}
+
+% Couleur bleue exacte (ajustée pour correspondre à la charte graphique)
+\definecolor{myblue}{HTML}{67B0E2}
+\definecolor{exactblue}{RGB}{0,113,188}
+\definecolor{textblue}{HTML}{528AAF}
+
+% Style des titres sans chapter
+\titleformat{\section}
+  {\normalfont\LARGE\bfseries\color{textblue}}{}{0em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{}{0em}{}
+
+\begin{document}
+
+% Logo en haut centré et transparent (plus grand)
+\vspace{-3cm}
+\begin{center}
+\begin{tikzpicture}
+  \node[opacity=0.5] {\includegraphics[width=0.5\textwidth]{image1}};
+\end{tikzpicture}
+\end{center}
+
+\bigskip
+
+\noindent
+\noindent
+\begin{tikzpicture}
+  % Bande bleue custom
+  \fill[myblue] (0,0) rectangle (0.3,10);
+  % Texte à droite de la bande
+  \node[anchor=north west] at (0.5,10) {%
+    \begin{minipage}{13cm}
+      {\color{textblue}\textbf{\LARGE THESE DE DOCTORAT}} \\[0.5cm]
+      {\Large \textbf{ED 481 - Sciences sociales et humanités}} \\[0.5cm]
+      Présentée et soutenue le : \textbf{(date)} \\
+      Par : \textbf{Prénom NOM DE FAMILLE} \\[0.5cm]
+      Thèse pour obtenir le grade de \\
+      \textbf{Docteur de l’Université de Pau et des Pays de l’Adour} \\
+      en \textbf{(nom de la discipline/spécialité)} \\[1.5cm]
+      {\Large\textbf{\textit{Titre de la thèse, titre long, très très long ou super long ou super super super long ou encore plus long}}}
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+% Encadré Jury complet avec thèse dirigée
+\vspace{1cm}
+\noindent
+\fcolorbox{white}{exactblue!10}{
+  \parbox{\textwidth}{
+    \textbf{\color{white}\large\setlength{\fboxsep}{6pt}\colorbox{exactblue}{Th\`ese dirig\'ee par : Pr\'enom NOM DE FAMILLE}} \\[0.5cm]
+    \textbf{\large JURY} \\[0.2cm]
+    \textbf{Pr\'esident du jury} \\
+    \textbullet\ Pr\'enom NOM DE FAMILLE \hfill Statut / Laboratoire / Universit\'e \\
+    \\[0.2cm]
+    \textbf{Rapporteurs} \\
+    \textbullet\ Pr\'enom NOM DE FAMILLE \hfill Statut / Laboratoire / Universit\'e \\
+    \textbullet\ Pr\'enom NOM DE FAMILLE \hfill Statut / Laboratoire / Universit\'e \\
+    \\[0.2cm]
+    \textbf{Examinateurs} \\
+    \textbullet\ Pr\'enom NOM DE FAMILLE \hfill Statut / Laboratoire / Universit\'e \\
+    \textbullet\ Pr\'enom NOM DE FAMILLE \hfill Statut / Laboratoire / Universit\'e
+  }
+}
+
+% Logo en bas de page 1
+\vfill
+\begin{center}
+\begin{tikzpicture}
+  \node[opacity=0.5] {\includegraphics[width=0.4\textwidth]{image2}};
+\end{tikzpicture}
+\end{center}
+
+% Début du mémoire
+\newpage
+\section*{TITRE PRINCIPAL DU PARAGRAPHE}
+\section*{Sous titre du paragraphe}
+
+\subsection*{Sous sous titre du paragraphe}
+Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent...
+
+\subsection*{Sous sous titre du paragraphe}
+Atque, ut Tullius ait...
+
+\subsection*{Sous sous titre du paragraphe}
+Nec sane haec sola pernicies...
+
+\section*{Sous titre du paragraphe}
+\subsection*{Sous sous titre du paragraphe}
+Raptim igitur properantes...
+
+\subsection*{Sous sous titre du paragraphe}
+Atque, ut Tullius ait...
+
+
+% Page finale (logo en haut + contenu centré)
+\newpage
+\begin{center}
+\begin{tikzpicture}
+  \node[opacity=0.5] {\includegraphics[width=0.4\textwidth]{image1}};
+\end{tikzpicture}
+\end{center}
+
+\vspace*{6cm}
+\begin{center}
+\textbf{ECOLE DOCTORALE} \\
+ED 481 - Sciences sociales et humanit\'es \\
+\textbf{LABORATOIRE} \\
+(\`a personnaliser) \\[0.5cm]
+Contact, s'il y a lieu
+\end{center}
+
+\vfill
+\begin{center}
+\begin{tikzpicture}
+  \node[opacity=0.5] {\includegraphics[width=0.4\textwidth]{image2}};
+\end{tikzpicture}
+\end{center}
+
+\end{document}
