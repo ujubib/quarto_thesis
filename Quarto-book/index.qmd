@@ -1,5 +1,14 @@
-# Preface {.unnumbered}
+---
+title: "Accueil"
 
-This is a Quarto book.
+---
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+::: {.title}
+Accès à l’électricité et développement dans les espaces ruraux sénégalais  
+Le cas de l’énergie solaire dans la concession de Kolda-Vélingara-Médina Yoro Foulah (Kvm)
+:::
+
+::: {.auteur}
+Mariama Sarr
+:::
+

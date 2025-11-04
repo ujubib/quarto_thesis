@@ -1,0 +1,38 @@
+color:
+  background: floralwhite
+  foreground: black
+
+logo: 
+  medium: /img/LogoTREE_400x400.jpg
+  small: /img/UPPA_logo.png
+
+typography:
+  fonts:
+    - family: Amaranth
+      source: bunny
+    - family: Arsenal # Alegreya Sans, B612
+      source: bunny
+    - family: B612 Mono
+      source: bunny
+  base: Arsenal
+  headings: Amaranth
+  monospace: B612 Mono
+  link: 
+    color: green
+
+defaults: 
+  bootstrap:
+    rules: |
+      .navbar {
+        background-color: #2c3e50;
+      }
+      .nav-link {
+        color: #ccd1d5;
+      }
+      .navbar-brand {
+        color: linen;
+      }
+      .navbar-logo {
+        max-height: 48px;
+        padding-right: .8em;
+      }

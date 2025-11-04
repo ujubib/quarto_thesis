@@ -1,0 +1,35 @@
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{tikz}
+
+% Configuration initiale
+\KOMAoption{paper}{a4}
+\KOMAoption{fontsize}{12pt}
+\KOMAoption{DIV}{12}
+
+% Réinitialiser la numérotation des pages
+\let\cleardoublepage\clearpage
+
+% Configuration pour la page de titre
+\renewcommand*{\maketitle}{}
+
+% Couleur bleue exacte (ajustée pour correspondre à la charte graphique)
+\definecolor{myblue}{HTML}{67B0E2}
+\definecolor{exactblue}{RGB}{0,113,188}
+\definecolor{textblue}{HTML}{528AAF}
+
+% Style des titres sans chapter
+\titleformat{\section}
+  {\normalfont\LARGE\bfseries\color{textblue}}{}{0em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{}{0em}{}
+
+% Configuration pour la page de titre
+\AtBeginDocument{
+  \let\oldmaketitle\maketitle
+  \renewcommand{\maketitle}{}
+  \pagenumbering{gobble}
+}
