@@ -4,18 +4,7 @@
 \usepackage{geometry}
 \usepackage{titlesec}
 \usepackage{tikz}
-
-% Configuration initiale
-\KOMAoption{paper}{a4}
-\KOMAoption{fontsize}{12pt}
-\KOMAoption{DIV}{12}
-
-% Réinitialiser la numérotation des pages
-\let\cleardoublepage\clearpage
-
-% Configuration pour la page de titre
-\renewcommand*{\maketitle}{}
-
+\usepackage{lipsum} 
 % Couleur bleue exacte (ajustée pour correspondre à la charte graphique)
 \definecolor{myblue}{HTML}{67B0E2}
 \definecolor{exactblue}{RGB}{0,113,188}
@@ -28,8 +17,43 @@
   {\normalfont\large\bfseries}{}{0em}{}
 
 % Configuration pour la page de titre
-\AtBeginDocument{
-  \let\oldmaketitle\maketitle
-  \renewcommand{\maketitle}{}
-  \pagenumbering{gobble}
-}
+% --- Styles pour les éléments structurels (scrbook)
+% On utilise les commandes KOMA-Script pour définir la police/couleur
+% des niveaux 
+\setkomafont{part}{\centering\Huge\bfseries\color{myblue}}
+\setkomafont{chapter}{\Huge\bfseries\color{textblue}}
+\setkomafont{section}{\Large\bfseries\color{textblue}}
+\setkomafont{subsection}{\large\bfseries}
+
+% Si vous préférez utiliser titlesec pour un contrôle plus fin, exemples:
+% \titleformat{\chapter}[hang]{\Huge\bfseries\color{textblue}}{\thechapter}{1em}{}
+% \titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+% Espacements généraux (ajuster si besoin)
+\usepackage{etoolbox}
+\makeatletter
+% petit espace avant chaque chapitre
+\preto\chapter{\vspace*{1.5\baselineskip}}
+\makeatother
+
+% Conseils pour la table des matières (TOC)
+% KOMA applique déjà un style correct; pour forcer des polices dans la TOC vous
+% pouvez utiliser tocloft ou addtokomafont sur les éléments de la TOC.
+% Ex: \addtokomafont{chapterentry}{\bfseries}
+
+% --- Petit rappel: styling HTML
+% Pour que l'apparence des "parts" apparaisse aussi en HTML, ajoutez ceci
+% dans `style.css` (site CSS) :
+%
+% .part {
+%   font-size: 2.2rem;
+%   color: #528AAF; /* même que textblue */
+%   text-align: center;
+%   margin: 2rem 0;
+%   font-weight: 700;
+% }
+% .chapter-title {
+%   color: #528AAF;
+% }
+%
+% Ajustez les sélecteurs selon le HTML généré par Quarto si besoin.
