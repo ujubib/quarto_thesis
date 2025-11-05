@@ -11,13 +11,8 @@ book:
     - index.qmd
     - intro.qmd
     - summary.qmd
-    - part: Part1.qmd
-      chapters: 
-        - Part1-chap1.qmd
-        - Part1-chap2.qmd
-    - part: Part2.qmd
-      chapters:
-        - Part2-chap1.qmd
+    - Part1.qmd
+    - Part2.qmd
     - references.qmd
   downloads: [pdf, docx]
   open-graph: true
@@ -55,28 +50,32 @@ format:
     lightbox: true
   pdf:
     lang: fr
+    top-level-division: part
     number-sections: true
     documentclass: scrbook
     documentclass-args: 
       - twoside=true
       - chapterprefix=true  # pour supprimer "Chapitre" devant les numéros
     fontsize: 12pt
+    fontfamily: Crimson Pro
     papersize: a4
-    include-in-header: preamble.tex
-    include-before-body: title.tex
-    toc: true
-    toc-depth: 5
-    toc-title: Table des matières
-    lot: true
-    lof: true
-    thanks: |
-      Merci à toutes les personnes qui ont contribué à la réalisation de ce travail.
     geometry:
       - top=25mm
       - bottom=25mm
       - left=30mm
       - right=30mm
       - bindingoffset=6mm
+    toc: true
+    toc-depth: 5
+    toc-title: Table des matières
+    lot: true
+    lof: true
+    
+    include-in-header: preamble.tex
+    #include-before-body: title.tex
+    template-partials: 
+      - before-body.tex
+      - after-body.tex
   docx:
     lang: fr
     toc: true
