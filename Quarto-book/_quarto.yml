@@ -13,8 +13,13 @@ book:
     - summary.qmd
     - part: Part1.qmd
       chapters: 
-        - Part1-Chapter1.qmd
+        - Part1-chap1.qmd
+        - Part1-chap2.qmd
+    - part: Part2.qmd
+      chapters:
+        - Part2-chap1.qmd
     - references.qmd
+  downloads: [pdf, docx]
   open-graph: true
   reader-mode: true
   page-navigation: true
@@ -50,7 +55,7 @@ format:
     lightbox: true
   pdf:
     lang: fr
-    number-sections: false
+    number-sections: true
     documentclass: scrbook
     documentclass-args: 
       - twoside=true

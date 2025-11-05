@@ -1,12 +1,13 @@
----
-title: "Accueil"
+# Accueil {.unnumbered}
 
----
-
-::: {.title}
+::: {.titre}
 Accès à l’électricité et développement dans les espaces ruraux sénégalais  
+:::
+
+::: {.sous-titre}
 Le cas de l’énergie solaire dans la concession de Kolda-Vélingara-Médina Yoro Foulah (Kvm)
 :::
+
 
 ::: {.auteur}
 Mariama Sarr
