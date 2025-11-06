@@ -7,22 +7,21 @@ h3,
 h4,
 h5,
 h6  {
-    color: CornflowerBlue;
+    color: cornflowerblue;
 }
 
 
 #title-block-header {
     margin-bottom: 2em;
-    background-color: white;
+    background-color: rgba(0, 113, 188, 0.1);
     padding: 1em;
-    border: 3px solid black;
+    border: 4px solid #1976d2;
     border-radius: 12px;
-    padding-bottom: 1.4em;
 }
 h1.title {
     text-align: center;
-    color: CornflowerBlue;
-    line-height: 1.5em;
+    color: #184466;
+    line-height: 1.4em;
 }
 p.subtitle {
     text-align: center;
@@ -33,6 +32,11 @@ p.subtitle {
 .quarto-title-meta-heading {
     text-transform: none !important;
     color: grey;
+    font-size: 1.2em !important;
+}
+.quarto-title-meta-contents>p {
+    font-size: 1.6em;
+    font-weight: bold;
 }
 .quarto-title-meta-author {
     grid-template-columns: minmax(max-content, 0.5fr) 1fr !important;
@@ -61,6 +65,52 @@ p.subtitle {
   font-size: 1.2em;                 /* Légèrement plus grand pour capter l'attention */
   text-align: center;               /* Centrage du texte */
   color: #184466;                   /* Texte foncé, facile à lire */
+}
+
+.thesis-header {
+  display: flex;
+  gap: 20px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 3em; /* 2em de base + 1em supplémentaire */
+  margin-right: 0;
+}
+
+/* ... le reste du CSS reste inchangé ... */
+
+.vertical-bar {
+  width: 12px; /* 0.3cm équivalent approximatif */
+  background-color: #67B0E2; /* myblue */
+}
+
+.header-content {
+  max-width: 800px; /* ~14cm, ajuster selon vos besoins */
+}
+
+.thesis-type {
+  color: #528AAF; /* textblue */
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+.school-info {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+.degree-info {
+  margin: 0.3em 0;
+}
+
+.university-name {
+  font-weight: bold;
+  margin: 0.3em 0;
+}
+
+.discipline {
+  font-weight: bold;
 }
 
 .jury-box {

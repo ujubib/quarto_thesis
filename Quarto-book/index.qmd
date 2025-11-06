@@ -1,12 +1,44 @@
 ---
+citation:
+    type: thesis
+    author:
+      - family: Sarr
+        given: Mariama
+    citation-key: sarrAccesLelectriciteDeveloppement2025
+    event-place: Pau
+    genre: 'Thèse de doctorat : Géographie'
+    issued:
+      - year: 2025
+        month: 11
+    publisher: Université de Pau et des pays de l'Adour
+    publisher-place: Pau
+    title: |
+      Accès à l’électricité et développement dans les espaces ruraux sénégalais :
+      Le cas de l’énergie solaire dans la concession de Kolda-Vélingara-Médina
+      Yoro Foulah (KVM)
+    url: https://tel.archives-ouvertes.fr/
 format: html
 ---
 
 # {.unnumbered .unlisted}
 
 ``` {=html}
+<!--
 <div id="bienvenue">
   <p>Bienvenue sur la version html de ma thèse.</p>
+</div>
+-->
+<div class="thesis-header">
+  <div class="vertical-bar"></div>
+  <div class="header-content">
+    <div class="thesis-type">THESE DE DOCTORAT</div>
+    <div class="school-info">ED 481 - Sciences sociales et humanités</div>
+    <div class="degree-info">
+      Thèse pour obtenir le grade de
+      <div class="university-name">Docteur de l'Université de Pau et des Pays de l'Adour</div>
+      en <span class="discipline">Géographie</span>
+    </div>
+  </div>
 </div>
 
 <div class="jury-box">
