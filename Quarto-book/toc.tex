@@ -1,0 +1,23 @@
+$if(toc)$
+  \cleardoublepage
+  \frontmatter
+  $if(toc-title)$
+    \renewcommand*\contentsname{$toc-title$}
+  $endif$
+  {
+  $if(colorlinks)$
+    \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$$endif$}
+  $endif$
+  \setcounter{tocdepth}{$toc-depth$}
+  \tableofcontents
+  }
+  \cleardoublepage
+  $if(lof)$
+  \listoffigures
+  $endif$
+  $if(lot)$
+  \listoftables
+  $endif$
+  \cleardoublepage
+  \mainmatter
+  $endif$
