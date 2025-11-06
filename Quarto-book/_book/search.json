@@ -4,9 +4,9 @@
     "href": "index.html",
     "title": "Accès à l’électricité et développement dans les espaces ruraux sénégalais",
     "section": "",
-    "text": "Accueil\n\nAccès à l’électricité et développement dans les espaces ruraux sénégalais\n\n\nLe cas de l’énergie solaire dans la concession de Kolda-Vélingara-Médina Yoro Foulah (Kvm)\n\n\nMariama Sarr",
+    "text": "Bienvenue sur la version html de ma thèse.",
     "crumbs": [
-      "Accueil"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Accueil</span>"
     ]
   },
   {
@@ -17,16 +17,6 @@
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. « Literate Programming ». Comput. J. 27 (2): 97‑111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "Introduction"
-    ]
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.",
-    "crumbs": [
-      "Summary"
     ]
   },
   {

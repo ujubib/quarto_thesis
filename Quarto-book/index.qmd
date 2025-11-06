@@ -1,15 +1,18 @@
-# Accueil {.unnumbered}
+---
+format: html
+---
 
-::: {.titre}
-Accès à l’électricité et développement dans les espaces ruraux sénégalais  
-:::
+# {.unnumbered .unlisted}
 
-::: {.sous-titre}
-Le cas de l’énergie solaire dans la concession de Kolda-Vélingara-Médina Yoro Foulah (Kvm)
-:::
+``` {=html}
+<div id="bienvenue">
+  <p>Bienvenue sur la version html de ma thèse.</p>
+</div>
+
+```
+
+\null\clearpage
+\thispagestyle{empty}
 
 
-::: {.auteur}
-Mariama Sarr
-:::
 

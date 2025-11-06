@@ -1,0 +1,3 @@
+li.sidebar-item:first-child{
+    display: none;
+}

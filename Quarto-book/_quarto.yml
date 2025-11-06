@@ -10,7 +10,6 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
     - Part1.qmd
     - Part2.qmd
     - references.qmd
@@ -29,7 +28,7 @@ book:
   sidebar:
     style: "floating"
     background: floralwhite
-    collapse-level: 2
+    collapse-level: 3
 
 bibliography: references.bib
 
@@ -57,7 +56,10 @@ format:
       - twoside=true
       - chapterprefix=true  # pour supprimer "Chapitre" devant les numéros
     fontsize: 12pt
-    fontfamily: Crimson Pro
+    linestretch: 1.5
+    mainfont: Crimson Pro
+    sansfont: Carlito
+    monofont: Cantarell
     papersize: a4
     geometry:
       - top=25mm

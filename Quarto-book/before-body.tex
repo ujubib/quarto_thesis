@@ -1,42 +1,46 @@
-\vspace{-3cm}
-\begin{center}
-\begin{tikzpicture}
-  \node[opacity=0.5] {\includegraphics[width=0.5\textwidth]{img/UPPA_logo.png}};
+\thispagestyle{empty}
+% Logo UPPA placé en overlay en haut de la page (précis, ne crée pas d'espace vertical avant le contenu)
+\begin{tikzpicture}[remember picture,overlay]
+  % adjust yshift to move the logo slightly down from the page top (negative moves up)
+  \node at (current page.north) [yshift=-16mm] {\includegraphics[width=0.5\textwidth]{img/UPPA_logo.png}};
 \end{tikzpicture}
-\end{center}
 
-%\bigskip
-
-\noindent
+\vspace{0.5cm}
 \noindent
 \begin{tikzpicture}
   % Bande bleue custom
-  \fill[myblue] (0,0) rectangle (0.3,10);
+  \fill[myblue] (0,0) rectangle (0.3,9cm);
   % Texte à droite de la bande
-  \node[anchor=north west] at (0.5,10) {%
-    \begin{minipage}{13cm}
-      {\color{textblue}\textbf{\LARGE THESE DE DOCTORAT}} \\[0.5cm]
-      {\Large \textbf{ED 481 - Sciences sociales et humanités}} \\[0.5cm]
-      Présentée et soutenue le : \textbf{4 novembre 2025} \\
-      Par : \textbf{Mariama Sarr} \\[0.5cm]
+  \node[anchor=north west] at (0.5,9cm) {%
+    \begin{minipage}{14cm}
+      {\color{textblue}\textbf{\LARGE THESE DE DOCTORAT}} \\[0.3cm]
+      {\Large \textbf{ED 481 - Sciences sociales et humanités}} \\[0.3cm]
+      Présentée et soutenue le : \textbf{$date$} \\
+      Par : \textbf{$author$} \\[0.3cm]
       Thèse pour obtenir le grade de \\
       \textbf{Docteur de l'Université de Pau et des Pays de l'Adour} \\
-      en \textbf{Géographie} \\[1.5cm]
-      {\Large\textbf{\textit{Accès à l'électricité et développement dans les espaces ruraux sénégalais\\Le cas de l'énergie solaire dans la concession de Kolda-Vélingara-Médina Yoro Foulah (Kvm)}}}
+      en \textbf{Géographie} \\[1cm]
+      \begin{minipage}{\linewidth}
+        \Large\textbf{%
+          {\renewcommand{\baselinestretch}{1.4}\selectfont
+          $title$}%
+        }\\[0.2cm]
+        \Large\textbf{\textit{$subtitle$}}
+      \end{minipage}
     \end{minipage}
   };
 \end{tikzpicture}
 
 % Encadré Jury complet avec thèse dirigée
-\vspace{1cm}
+\vspace{0.5cm}
 \noindent
 \fcolorbox{white}{exactblue!10}{
   \parbox{\textwidth}{
-    \textbf{\color{white}\large\setlength{\fboxsep}{6pt}\colorbox{exactblue}{Th\`ese dirig\'ee par : Pr\'enom NOM DE FAMILLE}} \\[0.5cm]
-    \textbf{\large JURY} \\[0.2cm]
+    \textbf{\color{white}\large\setlength{\fboxsep}{6pt}\colorbox{exactblue}{Th\`ese dirig\'ee par : Pr\'enom NOM DE FAMILLE}} \\[0.3cm]
+    \textbf{\large JURY} \\[0.15cm]
     \textbf{Pr\'esident du jury} \\
     \textbullet\ Pr\'enom NOM DE FAMILLE \hfill Statut / Laboratoire / Universit\'e \\
-    \\[0.2cm]
+    \\[0.15cm]
     \textbf{Rapporteurs} \\
     \textbullet\ Pr\'enom NOM DE FAMILLE \hfill Statut / Laboratoire / Universit\'e \\
     \textbullet\ Pr\'enom NOM DE FAMILLE \hfill Statut / Laboratoire / Universit\'e \\
@@ -47,10 +51,11 @@
   }
 }
 
-% Logo en bas de page 1
+% Logo en bas de page 1 (anchored to bottom using vfill)
 \vfill
 \begin{center}
 \begin{tikzpicture}
-  \node[opacity=0.5] {\includegraphics[width=0.4\textwidth]{img/LogoTREE_400x400.jpg}};
+  \node[opacity=1] {\includegraphics[width=0.35\textwidth]{img/LogoTREE_400x400.jpg}};
 \end{tikzpicture}
 \end{center}
+\clearpage
