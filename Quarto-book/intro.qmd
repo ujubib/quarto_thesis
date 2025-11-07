@@ -1,5 +1,25 @@
 ## Introduction {.unnumbered}
 
+### Pages à ajouter en début de document{.numbered}
+
+#### Remerciements {.numbered}
+  
+![Remerciements de la thèse d'Arthur Perret](img/remerciements.png)
+
+#### Résumé + mots-clés + licence (fr + en) {.numbered}
+
+::: {#fig-abstract layout-ncol=2}
+![Page résumé - fr](img/resume_fr.png) 
+  
+![Page résumé - en](img/resume_en.png)
+
+Pages de résumé de la thèse d'Arthur Perret
+:::
+
+### Pages à ajouter à la fin du document {.numbered}
+
+***
+
 This is a book created from markdown and executable code.
 
 See @knuth84 for additional discussion of literate programming.

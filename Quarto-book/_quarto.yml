@@ -4,8 +4,25 @@ project:
 book:
   title: "Accès à l’électricité et développement dans les espaces ruraux sénégalais"
   subtitle: "Le cas de l’énergie solaire dans la concession de Kolda-Vélingara-Médina Yoro Foulah (KVM)"
-  author: "Mariama Sarr"
+  author:
+    - name: Mariama Sarr
+      orcid: 0000-0002-1205-0190
+      email: mariama.sarr@univ-pau.fr
+      affiliation: 
+        - name: Université de Pau et des pays de l'Adour (UPPA)
+          city: Pau
+          state: FR
+          url: https://www.univ-pau.fr
+        - name: Laboratoire Transitions Energétiques et Environnementales (TREE -- UMR 6031 -- CNRS-UPPA)
+          city: Pau
+          state: FR
+          url: https://tree.univ-pau.fr/
+        - name: Université Cheikh Anta Diop de Dakar (UCAD)
+          city: Dakar
+          state: SN
+          url: https://www.ucad.sn
   date: 2025-11-04
+  date-format: "dddd DD MMMM YYYY"
   language: fr-FR
   chapters:
     - index.qmd
@@ -31,6 +48,7 @@ book:
     collapse-level: 3
 
 bibliography: references.bib
+csl: http://www.zotero.org/styles/norois
 
 format:
   html:
@@ -85,6 +103,3 @@ format:
     toc-depth: 5
     toc-title: Table des matières
     notes-after-punctuation: false
-
-
-

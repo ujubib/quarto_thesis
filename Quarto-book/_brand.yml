@@ -18,7 +18,7 @@ typography:
   headings: Amaranth
   monospace: B612 Mono
   link: 
-    color: CornflowerBlue
+    color: cornflowerblue
 
 defaults: 
   bootstrap:

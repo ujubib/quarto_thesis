@@ -1,24 +1,17 @@
 ---
 citation:
-    type: thesis
-    author:
-      - family: Sarr
-        given: Mariama
-    citation-key: sarrAccesLelectriciteDeveloppement2025
-    event-place: Pau
-    genre: 'Thèse de doctorat : Géographie'
-    issued:
-      - year: 2025
-        month: 11
-    publisher: Université de Pau et des pays de l'Adour
-    publisher-place: Pau
-    title: |
-      Accès à l’électricité et développement dans les espaces ruraux sénégalais :
-      Le cas de l’énergie solaire dans la concession de Kolda-Vélingara-Médina
-      Yoro Foulah (KVM)
-    url: https://tel.archives-ouvertes.fr/
+  type: thesis
+  event-place: Pau
+  genre: 'Thèse de doctorat : Géographie'
+  publisher: "Université de Pau et des pays de l'Adour"
+  publisher-place: "Pau"
+  url: https://tel.archives-ouvertes.fr/
+  issued:
+    year: 2025
+    month: 11
 format: html
 ---
+
 
 # {.unnumbered .unlisted}
 
@@ -76,30 +69,16 @@ format: html
     </div>
   </div>
 </div>
+<script>
+    // Cherche tous les éléments qui contiennent le texte à remplacer
+  document.querySelectorAll("body *").forEach(function(node) {
+    if (node.childNodes.length === 1 
+        && node.nodeType === 1 
+        && node.textContent.trim() === 'Date de publication') {
+      node.textContent = 'Date de soutenance';
+    }
+  });
+</script>
 
 ```
-
-
-
-``` {=latex}
-\null\clearpage
-\thispagestyle{empty}
-\begin{minipage}{14cm}
-      {\color{textblue}\textbf{\LARGE THESE DE DOCTORAT}} \\[0.3cm]
-      {\Large \textbf{ED 481 - Sciences sociales et humanités}} \\[0.3cm]
-      Présentée et soutenue le : \textbf{$date$} \\
-      Par : \textbf{$author$} \\[0.3cm]
-      Thèse pour obtenir le grade de \\
-      \textbf{Docteur de l'Université de Pau et des Pays de l'Adour} \\
-      en \textbf{Géographie} \\[1cm]
-      \begin{minipage}{\linewidth}
-        \Large\textbf{%
-          {\renewcommand{\baselinestretch}{1.4}\selectfont
-          $title$}%
-        }\\[0.2cm]
-        \Large\textbf{\textit{$subtitle$}}
-      \end{minipage}
-    \end{minipage}
-```
-
 
