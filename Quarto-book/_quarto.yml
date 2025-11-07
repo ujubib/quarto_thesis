@@ -5,7 +5,7 @@ book:
   title: "Accès à l’électricité et développement dans les espaces ruraux sénégalais"
   subtitle: "Le cas de l’énergie solaire dans la concession de Kolda-Vélingara-Médina Yoro Foulah (KVM)"
   author:
-    - name: Mariama Sarr
+    - name: Mariama SARR
       orcid: 0000-0002-1205-0190
       email: mariama.sarr@univ-pau.fr
       affiliation: 
@@ -53,8 +53,9 @@ csl: http://www.zotero.org/styles/norois
 format:
   html:
     lang: fr
+    mainfont: Arsenal
     theme:
-      - cosmo
+      - litera
       - brand
     css: style.css
     toc: true
@@ -65,6 +66,8 @@ format:
     link-external-icon: true
     link-external-newwindow: true
     lightbox: true
+    fig-align: center
+    fig-cap-location: bottom
   pdf:
     lang: fr
     top-level-division: part

@@ -17,9 +17,9 @@ h6  {
 
 #title-block-header {
     margin-bottom: 2em;
-    background-color: floralwhite;
+    background-color: white;
     padding: 1em;
-    border: 6px solid #67b0e2;
+    border: 3px solid #67b0e2;
     border-radius: 12px;
 }
 h1.title {
@@ -41,6 +41,7 @@ p.subtitle {
 .quarto-title-meta-contents>p {
     font-size: 1.2em;
     font-weight: bold;
+    font-family: Arsenal, sans-serif;
 }
 .quarto-title-meta-author {
     grid-template-columns: minmax(max-content, 0.5fr) 1fr !important;
@@ -121,9 +122,9 @@ p.affiliation::before {
 }
 
 .jury-box {
-  border: 1px solid white;
+  border: 3px solid #67b0e2;
   border-radius: 12px;
-  background-color: rgba(0, 113, 188, 0.1);
+  background-color: white;
   padding: 20px;
   margin: 20px 0;
 }

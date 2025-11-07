@@ -18,13 +18,12 @@ typography:
   headings: Amaranth
   monospace: B612 Mono
   link: 
-    color: cornflowerblue
-
+    color: "#007399"
 defaults: 
   bootstrap:
     rules: |
       .navbar {
-        background-color: #2c3e50;
+        background-color: #67b0e2;
       }
       .nav-link {
         color: #ccd1d5;
@@ -35,4 +34,7 @@ defaults:
       .navbar-logo {
         max-height: 48px;
         padding-right: .8em;
+      }
+      p {
+        font-family: Arsenal, sans-serif;
       }

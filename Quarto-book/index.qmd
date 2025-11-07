@@ -9,7 +9,9 @@ citation:
   issued:
     year: 2025
     month: 11
-format: html
+format: 
+  html: 
+    appendix-style: default
 ---
 
 
